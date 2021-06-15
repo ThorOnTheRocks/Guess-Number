@@ -5,6 +5,8 @@ const btnCheck = document.querySelector('.check');
 const guessInput = document.querySelector('.guess');
 const message = document.querySelector('.message');
 const randNum = document.querySelector('.number');
+const btnRefresh = document.querySelector('.again');
+
 let score = document.querySelector('.score');
 let highScore = document.querySelector('.highscore');
 
@@ -42,5 +44,9 @@ const checkGuessInput = (guess) => {
 // Reacting to Event Listener
 btnCheck.addEventListener('click', () => {
   checkGuessInput(guessInput);
+})
+
+btnRefresh.addEventListener('click', () => {
+  window.location.reload();
 })
 
