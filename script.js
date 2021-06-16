@@ -12,8 +12,6 @@ const body = document.querySelector('body');
 let score = document.querySelector('.score');
 let highScore = document.querySelector('.highscore');
 
-let firstTime = false;
-
 // Deactive check button
 btnCheck.disabled = false;
 
